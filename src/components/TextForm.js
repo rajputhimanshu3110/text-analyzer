@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Nav from "./Nav";
 
 function TextForm(props) {
     const [text, setText] = useState('');
