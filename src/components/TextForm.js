@@ -28,10 +28,9 @@ function TextForm(props) {
     return (
      <>
     <div className='container my-2'>
-        <form action="/action_page.php">
-            <h2 className="head">{props.label}</h2>
-            <textarea className="form-control" rows={props.r} value={text} onChange={handleChange} placeholder="Enter text to start Analysis"></textarea>
-        </form> 
+        
+        <h2 className="head">{props.label}</h2>
+        <textarea className="form-control" rows={props.r} value={text} onChange={handleChange} placeholder="Enter text to start Analysis"></textarea>
         <button type="button" onClick={lowerCase} className="btn btn-primary btn-sm m-2">Lower Case</button>        
         <button type="button" onClick={upperCase} className="btn btn-info btn-sm m-2">Upper Case</button> 
         <button type="button" onClick={removeSpace} className="btn btn-success btn-sm m-2">Extraspaces</button>
