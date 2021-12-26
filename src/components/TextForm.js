@@ -15,8 +15,12 @@ function TextForm(props) {
         setText(newText)
     }
     const removeSpace = (e) => {
-        let newText = text.trim()
+        let newText = text.replace(/^\s+|\s+$/gm,'');
         setText(newText)
+    }
+    const CopyAll = () => {
+        navigator.clipboard.writeText(text);
+        alert("Copied the text: " + text);
     }
     const clearAll = () => {
         setText('')
@@ -32,7 +36,8 @@ function TextForm(props) {
         </form> 
         <button type="button" onClick={lowerCase} className="btn btn-primary btn-sm m-2">Lower Case</button>        
         <button type="button" onClick={upperCase} className="btn btn-info btn-sm m-2">Upper Case</button> 
-        <button type="button" onClick={removeSpace} className="btn btn-success btn-sm m-2"><abbr title="Remove Extraspaces from both side">Extraspaces</abbr></button>
+        <button type="button" onClick={removeSpace} className="btn btn-success btn-sm m-2">Extraspaces</button>
+        <button type="button" onClick={CopyAll} className="btn btn-warning btn-sm m-2">Copy</button>
         <button type="button" onClick={clearAll} className="btn btn-danger btn-sm m-2">Clear All</button> 
 
     </div>

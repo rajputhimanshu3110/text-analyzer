@@ -11,12 +11,13 @@ import {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <TextForm r='10'/>
+      {/*<BrowserRouter>
         <Routes>
           <Route path="/" element={<TextForm r='10'/>} />
           <Route path="About" element={<About />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>*/}
     </div>
   );
 }
