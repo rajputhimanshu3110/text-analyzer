@@ -28,7 +28,6 @@ function TextForm(props) {
     
     return (
      <>
-    <Nav branding='Text Analyzer'/>
     <div className='container my-2'>
         <form action="/action_page.php">
             <h2 className="head">{props.label}</h2>
