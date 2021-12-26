@@ -5,7 +5,7 @@ import TextForm from './components/TextForm'
 function App() {
   return (
     <div className="App">
-      
+      <Nav branding='Text Analyzer'/>
       <TextForm r='10'/>
       {/*<BrowserRouter>
         <Routes>
