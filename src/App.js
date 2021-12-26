@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <React.StrictMode>
         <Nav branding='Text Analyzer'/>
-        <TextForm r='10'/>
+        <TextForm r='10' label='Analysis Wing'>
       </React.StrictMode>
       
       {/*<BrowserRouter>
