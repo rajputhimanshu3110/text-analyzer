@@ -1,3 +1,4 @@
+import React from 'react'
 import Nav from './components/Nav.js'
 import TextForm from './components/TextForm'
 
@@ -5,8 +6,11 @@ import TextForm from './components/TextForm'
 function App() {
   return (
     <div className="App">
-      <Nav branding='Text Analyzer'/>
-      <TextForm r='10'/>
+      <React.StrictMode>
+        <Nav branding='Text Analyzer'/>
+        <TextForm r='10'/>
+      </React.StrictMode>
+      
       {/*<BrowserRouter>
         <Routes>
           <Route path="/" element={<TextForm r='10'/>} />
