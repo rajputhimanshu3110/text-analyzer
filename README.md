@@ -12,5 +12,5 @@
     Reading Time
   
 # App Link
-  You can run app online on [This Link](https://x-lucifur.github.io/text-analyzer/)
+  You can run app online on [This Link]([https://x-lucifur.github.io/text-analyzer/](https://textanalyzerv.herokuapp.com/text-analyzer))
   
